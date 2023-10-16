@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "32cfa913-37a3-47ae-8d82-137f0502a3ed",
+		"name": "Aspin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10648196"
+	},
+	"item": [
+		{
+			"name": "Get coins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3005/api/crypto/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"crypto",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create coin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BKK\",\r\n    \"image\": \"text.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/api/crypto",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"crypto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coin by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BKK\",\r\n    \"image\": \"text.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/api/crypto/652a6667cd1d5ebd9dbc22d5",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"crypto",
+						"652a6667cd1d5ebd9dbc22d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 123,\r\n    \"date\": \"2023-10-14T09:59:03.843Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/api/crypto/652a6667cd1d5ebd9dbc22d5",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"crypto",
+						"652a6667cd1d5ebd9dbc22d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete value",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 123,\r\n    \"date\": \"2023-10-14T09:59:03.843Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3005/api/crypto/652a6667cd1d5ebd9dbc22d5/652d7e7383cba71b404e366f",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"crypto",
+						"652a6667cd1d5ebd9dbc22d5",
+						"652d7e7383cba71b404e366f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

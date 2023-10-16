@@ -1,0 +1,16 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 90px);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__link {
+        color: rgb(58, 58, 210);
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
